@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contacto - Dulce Nube</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="div-logo">
+        <a class="logo" href="../index.html"></a>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#productos">Productos</a></li>
+          <li><a href="../index.html#resenas">Reseñas</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contacto">
+        <h1 class="titulo-contacto text-secondary">
+          Contactanos
+        </h1>
+
+        <form
+          class="form-contacto"
+          action=https://formspree.io/f/xkjgldeb
+          method="POST"
+        >
+          <div class="grupo-input">
+            <label for="nombre">Nombre:</label>
+            <input
+              id="nombre"
+              type="text"
+              name="nombre"
+              placeholder="Escribí tu nombre"
+              required
+            />
+          </div>
+
+          <div class="grupo-input">
+            <label for="email">Correo electrónico:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+          </div>
+
+          <div class="grupo-input">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="message"
+              placeholder="Escribí tu mensaje"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            class="btn bg-secondary text-dark"
+            type="submit"
+          >
+            Enviar mensaje
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Dulce Nube - Heladería & Confitería con ❤️ Noe Laino
+      </p>
+
+      <nav>
+        <ul class="footer-list">
+          <li>
+            <img src="../img/whatsapp.png" alt="Logo de WhatsApp" />
+          </li>
+          <li>
+            <img src="../img/instagram.png" alt="Logo de Instagram" />
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
