@@ -240,16 +240,21 @@ footer .footer-list {
   text-align: center;
 
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+
+  box-sizing: border-box;
 }
 
 .ventana-detalle img {
-  width: 23rem;
-  height: 23rem;
+    width: 100%;
+    max-width: 23rem;
+    height: auto;
+    object-fit: cover;
 
-  object-fit: cover;
-
-  border-radius: 1rem;
+    border-radius: 1rem;
 }
+
+ 
+
 
 /*-------------------RESEÑAS-------------------*/
 
@@ -392,6 +397,28 @@ footer .footer-list {
 
     .card img {
         height: 18rem;
+    }
+
+        .detalle-producto {
+        padding: 1rem;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .ventana-detalle {
+        width: 95%;
+        max-width: 32rem;
+        max-height: calc(100vh - 2rem);
+        padding: 1.5rem;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .ventana-detalle img {
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+        object-fit: cover;
     }
 
     /* RESEÑAS EN CELULAR */
