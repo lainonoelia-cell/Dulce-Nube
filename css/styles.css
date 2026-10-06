@@ -183,10 +183,18 @@ footer .footer-list {
   padding-bottom: 2rem;
 }
 
+.card h2 {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card img {
   width: 80%;
   height: 20rem;
   object-fit: cover;
+ 
   border-radius: 1.5rem;
 }
 
@@ -245,45 +253,41 @@ footer .footer-list {
 }
 
 .ventana-detalle img {
-    width: 100%;
-    max-width: 23rem;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  max-width: 23rem;
+  height: auto;
+  object-fit: cover;
 
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
-
- 
-
 
 /*-------------------RESEÑAS-------------------*/
 
 .contenedor-resenas {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .resena {
-    background-color: #8a79a8e3;
-    color: #c3bfc7;
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
+  background-color: #8a79a8e3;
+  color: #c3bfc7;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .resena h3 {
-    color: #f2c66d;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  color: #f2c66d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .resena p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
-
 
 /*-------------------CONTACTO-------------------*/
 
@@ -293,7 +297,6 @@ footer .footer-list {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
-  
 }
 
 .titulo-contacto {
@@ -347,94 +350,92 @@ footer .footer-list {
 
 /*-------------------MEDIA QUERIES-------------------*/
 @media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
 
-    header,
-    footer {
-        flex-direction: column;
-    }
+  .header-nav,
+  .div-logo {
+    margin: 0;
+  }
 
-    .header-nav,
-    .div-logo {
-        margin: 0;
-    }
+  .header-nav ul,
+  footer .footer-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .header-nav ul,
-    footer .footer-list {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  main {
+    width: 95%;
+  }
 
-    main {
-        width: 95%;
-    }
+  h1 {
+    font-size: 3rem;
+    margin: 2rem 1rem;
+  }
 
-    h1 {
-        font-size: 3rem;
-        margin: 2rem 1rem;
-    }
+  h2 {
+    font-size: 2rem;
+    margin: 2rem 1rem;
+  }
 
-    h2 {
-        font-size: 2rem;
-        margin: 2rem 1rem;
-    }
+  .parrafo {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
 
-    .parrafo {
-        width: 100%;
-        font-size: 1.6rem;
-        padding: 1.5rem;
-    }
+  .contenedor-tarjetas {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .contenedor-tarjetas {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
+  .card {
+    width: 100%;
+    max-width: 32rem;
+  }
 
-    .card {
-        width: 100%;
-        max-width: 32rem;
-    }
+  .card img {
+    height: 18rem;
+  }
 
-    .card img {
-        height: 18rem;
-    }
+  .detalle-producto {
+    padding: 1rem;
+    align-items: center;
+    overflow-y: auto;
+  }
 
-        .detalle-producto {
-        padding: 1rem;
-        align-items: center;
-        overflow-y: auto;
-    }
+  .ventana-detalle {
+    width: 95%;
+    max-width: 32rem;
+    max-height: calc(100vh - 2rem);
+    padding: 1.5rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
 
-    .ventana-detalle {
-        width: 95%;
-        max-width: 32rem;
-        max-height: calc(100vh - 2rem);
-        padding: 1.5rem;
-        overflow-y: auto;
-        box-sizing: border-box;
-    }
+  .ventana-detalle img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    object-fit: cover;
+  }
 
-    .ventana-detalle img {
-        width: 100%;
-        max-width: 20rem;
-        height: auto;
-        object-fit: cover;
-    }
+  /* RESEÑAS EN CELULAR */
+  .contenedor-resenas {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
 
-    /* RESEÑAS EN CELULAR */
-    .contenedor-resenas {
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .form-contacto {
+  .form-contacto {
     padding: 2rem;
     font-size: 1.6rem;
-}
+  }
 
-    body {
-        background-size: 120px;
-        background-position: center;
-    }
+  body {
+    background-size: 120px;
+    background-position: center;
+  }
 }
-
