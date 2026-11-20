@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,33 +19,40 @@
     />
 
     <title>Contacto - Dulce Nube</title>
+    <meta
+      name="description"
+      content="Contactate con Dulce Nube para realizar consultas sobre nuestros helados, postres y productos de cafetería."
+    />
   </head>
 
   <body>
     <header>
       <div class="div-logo">
-        <a class="logo" href="../index.html"></a>
+        <a
+          class="logo"
+          href="../index.html"
+          aria-label="Dulce Nube - Ir al inicio"
+        ></a>
       </div>
 
       <nav class="header-nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../index.html#productos">Productos</a></li>
-          <li><a href="../index.html#resenas">Reseñas</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Carrito 🛒</a></li>
         </ul>
       </nav>
     </header>
+    <div class="div-logo"><a class="logo" href="../index.html">Dulce Nube</a></div>
 
     <main>
       <section class="contacto">
-        <h1 class="titulo-contacto text-secondary">
-          Contactanos
-        </h1>
+        <h1 class="titulo-contacto">Contáctanos</h1>
 
         <form
           class="form-contacto"
-          action=https://formspree.io/f/xkjgldeb
+          action="https://formspree.io/f/xkjgldeb"
           method="POST"
         >
           <div class="grupo-input">
@@ -75,28 +87,34 @@
             ></textarea>
           </div>
 
-          <button
-            class="btn bg-secondary text-dark"
-            type="submit"
-          >
-            Enviar mensaje
-          </button>
+          <button class="btn btn-contacto" type="submit">Enviar mensaje</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <p>
-        &copy; 2026 Dulce Nube - Heladería & Confitería con ❤️ Noe Laino
-      </p>
+      <p>&copy; 2026 Dulce Nube - Heladería & Confitería con ❤️ Noe Laino</p>
 
       <nav>
         <ul class="footer-list">
           <li>
-            <img src="../img/whatsapp.png" alt="Logo de WhatsApp" />
+            <a
+              href="https://wa.me/5491112345678"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="../img/whatsapp.png" alt="Contactar por WhatsApp"
+            /></a>
           </li>
+
           <li>
-            <img src="../img/instagram.png" alt="Logo de Instagram" />
+            <a
+              href="https://www.instagram.com/ig_usuario/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="../img/instagram.png" alt="Visitar Instagram"
+            /></a>
           </li>
         </ul>
       </nav>
